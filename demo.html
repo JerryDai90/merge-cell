@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="mergeRowCell_v1.0.js"></script>
+    </head>
+    <style>
+        .center {
+            vertical-align: middle !important;
+        }
+    </style>
+
+    <body class="hastop body-pic body-wihte qjd_qjd">
+
+        <div class="container">
+            <div class="table-responsive">
+                <table cellspacing="0" id="group-test" class="table table-small-font table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th data-priority="1">部门</th>
+                            <th data-priority="1">区域</th>
+                            <th data-priority="1">姓名</th>
+                            <th data-priority="3">产品</th>
+                            <th data-priority="3">销售额</th>
+                        </tr>
+                    </thead>
+
+                    <tbody name="maintbody">
+                        <tr>
+                            <td>渠道业务部</td>
+                            <td>华东区域</td>
+                            <td>张三</td>
+                            <td>奶粉A</td>
+                            <td>6662990.12</td>
+                        </tr>
+                        <tr>
+                            <td>渠道业务部</td>
+                            <td>华东区域</td>
+                            <td>张三</td>
+                            <td>奶粉B</td>
+                            <td>6662990.12</td>
+                        </tr>
+                        <tr>
+                            <td>渠道业务部</td>
+                            <td>华东区域</td>
+                            <td>张三</td>
+                            <td>奶粉C</td>
+                            <td>6662990.12</td>
+                        </tr>
+
+                        <tr>
+                            <td>渠道业务部</td>
+                            <td>华北区域</td>
+                            <td>王五</td>
+                            <td>奶粉A</td>
+                            <td>6662990.12</td>
+                        </tr>
+                        <tr>
+                            <td>渠道业务部</td>
+                            <td>华北区域</td>
+                            <td>王五</td>
+                            <td>奶粉B</td>
+                            <td>6662990.12</td>
+                        </tr>
+                        <tr>
+                            <td>渠道业务部</td>
+                            <td>西北区域</td>
+                            <td>王五</td>
+                            <td>奶粉C</td>
+                            <td>6662990.12</td>
+                        </tr>
+
+                        <tr>
+                            <td>渠道业务部</td>
+                            <td>西北区域</td>
+                            <td>李四</td>
+                            <td>奶粉A</td>
+                            <td>6662990.12</td>
+                        </tr>
+                        <tr>
+                            <td>渠道业务部</td>
+                            <td>西北区域</td>
+                            <td>李四</td>
+                            <td>奶粉B</td>
+                            <td>6662990.12</td>
+                        </tr>
+                        <tr>
+                            <td>渠道业务部</td>
+                            <td>华北区域</td>
+                            <td>李四</td>
+                            <td>奶粉C</td>
+                            <td>6662990.12</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <script type="application/javascript">
+
+            fnMergeRowCell($("[name=maintbody]"), [0, 1, 2]);
+        </script>
+    </body>
+
+</html>
