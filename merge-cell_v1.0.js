@@ -1,4 +1,4 @@
-var fnMergeRowCell = function(maintbodyObj, limitRowOrRowIndexs) {
+var fnMergeCell = function(maintbodyObj, limitRowOrRowIndexs) {
 	var limitRow = null //从0~n列
 	var limitRowIndex = null; //具体限制某列，如[0,4,5]
 
